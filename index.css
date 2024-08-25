@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900");
+
+:root {
+  --primary-color: #ff511a;
+  --secondary-color: #43ba7f;
+  --text-color: #212741;
+  --bg-color: #ffffff;
+  --link-color: #e36402;
+  --dark-bg-color: #181d30;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #686868;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo img {
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.navlist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlist li {
+  padding: 0 1rem;
+}
+
+.navlist li a {
+  text-decoration: none;
+  color: var(--bg-color);
+  font-weight: 300;
+  font-size: 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.navlist li a:hover,
+.navlist li a.active {
+  color: var(--primary-color);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.hero-section {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/hero-bg.jpg);
+  padding: 1rem;
+  left: 0;
+  background-size: 100% 100%;
+  animation: slide-in 2s ease-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text {
+  width: 50%;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+
+.hero-section .hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4.375rem;
+  color: var(--bg-color);
+  margin-bottom: 2.5rem;
+}
+
+.hero-section .hero-text h1 em {
+  font-style: normal;
+  color: var(--primary-color);
+}
+
+.divider {
+  width: 10rem;
+  height: 0.4rem;
+  background-color: var(--bg-color);
+  border-radius: 0.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-section .hero-text p {
+  margin-right: 3.57rem;
+  margin-bottom: 3rem;
+  color: var(--bg-color);
+}
+
+.section-heading {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.section-heading h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.section-heading h4 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+
+.service-item {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0px 0px 1px rgb(1, 1, 1);
+  margin-top: 2rem;
+  width: 95%;
+}
+
+.service-item:hover {
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.service-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+}
+
+.service-item i {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-right: -8%;
+  color: var(--primary-color);
+  transition: all 0.5s;
+  float: right;
+}
+
+.services i:hover {
+  margin-top: 1rem;
+}
+
+.banner {
+  background-image: url("images/banner-bg.jpg");
+  background-size: cover;
+  padding: 5rem 0;
+  margin-top: 2%;
+}
+
+.banner .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.banner h4 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: var(--bg-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.banner h4 em {
+  color: var(--secondary-color);
+  font-style: normal;
+}
+
+.banner h4 strong {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+
+.btn a:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
+.btn1 a {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+}
+
+.btn2 a {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.about-us {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.course-list {
+  margin-top: 5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.course-list li {
+  display: flex;
+  padding: 1rem;
+}
+
+.course-list li span {
+  flex: 1;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.list-head span {
+  font-weight: 700;
+}
+
+.item-title {
+  font-weight: 600 !important;
+  color: var(--secondary-color) !important;
+}
+
+.learning-plan {
+  background-image: url(images/plan-bg.png);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.sideImage {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.section-heading h4 {
+  color: var(--bg-color) !important;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.label {
+  font-size: 1rem;
+  color: var(--bg-color);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  background-color: rgb(130, 129, 129);
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(95, 94, 94);
+}
+
+.submit {
+  background-color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--primary-color);
+  color: var(--bg-color);
+}
+
+.submit:hover {
+  opacity: 0.7;
+  background-color: #212741;
+  border: 1px solid var(--text-color-color);
+}
+
+@media (max-width: 990px) {
+  .hero-section {
+    padding: 4rem;
+  }
+  .hero-text {
+    width: 90%;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .divider {
+    margin: 1rem auto;
+  }
+  .hero-text p {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  .sideImage {
+    display: none;
+  }
+  .section-heading {
+    text-align: center;
+    width: 90%;
+  }
+  .form-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 4rem;
+  }
+  .navlist li a {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+  .divider {
+    width: 15rem;
+  }
+  .service-item {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .service-item i {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .navlist {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .divider,
+  .hero-section .hero-text p {
+    display: none;
+  }
+  .course-list li {
+    flex-direction: column;
+  }
+}
